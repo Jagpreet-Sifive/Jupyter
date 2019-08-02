@@ -1,5 +1,8 @@
-solution for Mac as Object:
+//solution for Mac as Object:
 
+ package solutions
+ import chisel3._
+ import chisel3.util 
 
 object Mac {
     def apply [T <: Data : Ring](a: T, b: T, c: T): T = {

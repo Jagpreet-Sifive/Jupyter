@@ -1,4 +1,8 @@
-solution for ShiftRegister: 
+//solution for ShiftRegister: 
+
+ package solutions
+ import chisel3._
+ import chisel3.util 
 
 class MyShiftRegister(val init: Int = 1) extends Module {
   val io = IO(new Bundle {

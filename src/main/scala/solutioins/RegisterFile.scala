@@ -1,5 +1,10 @@
 
-solution for  RegisterFile :
+//solution for  RegisterFile :
+
+ package solutions
+ import chisel3._
+ import chisel3.util 
+
 
 class RegisterFile(readPorts: Int) extends Module {
     require(readPorts >= 0)

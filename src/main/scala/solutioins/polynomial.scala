@@ -1,7 +1,10 @@
-solution for Polynomial:
+//solution for Polynomial:
+
+ package solutions
+ import chisel3._
+ import chisel3.util 
 
 
-// compute the polynomial
 class Polynomial extends Module {
   val io = IO(new Bundle {
     val select = Input(UInt(2.W))

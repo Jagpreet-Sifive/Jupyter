@@ -1,4 +1,7 @@
-solution for MAC 
+//solution for MAC 
+ package solutions
+ import chisel3._
+ import chisel3.util 
 
 class MAC extends Module {
   val io = IO(new Bundle {

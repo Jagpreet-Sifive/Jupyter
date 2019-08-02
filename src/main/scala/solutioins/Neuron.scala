@@ -1,5 +1,7 @@
-solution for Neural Network Neuron: 
-
+//solution for Neural Network Neuron: 
+ package solutions
+ import chisel3._
+ import chisel3.util 
  
 
   class Neuron(inputs: Int, act: FixedPoint => FixedPoint) extends Module {
@@ -22,21 +24,4 @@ solution for Tester :
 Driver(() => new Neuron(2, Step)) {
   c => new PeekPokeTester(c) {
     
-    val inputs = Seq(Seq(-1, -1), Seq(-1, 1), Seq(1, -1), Seq(1, 1))
-    
-    
-   val weights  = Seq(1.0, 1.0)
-
-   
-   
-    reset(5)
-    for (i <- inputs) {
-      pokeFixedPoint(c.io.in(0), i(0))
-      pokeFixedPoint(c.io.in(1), i(1))
-      pokeFixedPoint(c.io.weights(0), weights(0))
-      pokeFixedPoint(c.io.weights(1), weights(1))
-      expectFixedPoint(c.io.out, if (i(0) + i(1) > 0) 1 else 0, "ERROR")
-      step(1)
-    }
-  }
-}
+  

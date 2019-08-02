@@ -1,6 +1,10 @@
-solution for  Parameterized Shift Register (Optional):
+//solution for  Parameterized Shift Register (Optional):
  
- / init state to init
+ package solutions
+ import chisel3._
+ import chisel3.util 
+
+
 class MyOptionalShiftRegister(val n: Int, val init: BigInt = 1) extends Module {
   val io = IO(new Bundle {
     val en  = Input(Bool())

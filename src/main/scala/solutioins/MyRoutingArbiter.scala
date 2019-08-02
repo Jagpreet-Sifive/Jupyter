@@ -1,4 +1,8 @@
-solution for  MyRoutingArbiter : 
+//solution for  MyRoutingArbiter : 
+
+ package solutions
+ import chisel3._
+ import chisel3.util 
 
 class MyRoutingArbiter(numChannels: Int) extends Module {
   val io = IO(new Bundle {

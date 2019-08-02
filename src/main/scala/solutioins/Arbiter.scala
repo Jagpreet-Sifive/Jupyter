@@ -1,5 +1,7 @@
-Solution for Arbiter...
-
+//Solution for Arbiter...
+ package solutions
+ import chisel3._
+ import chisel3.util
 class Arbiter extends Module {
   val io = IO(new Bundle {
     // FIFO
@@ -24,3 +26,4 @@ class Arbiter extends Module {
   io.pe0_data := io.fifo_data
   io.pe1_data := io.fifo_data  
 }
+

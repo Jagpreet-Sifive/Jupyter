@@ -1,5 +1,8 @@
-solution for  GradLife :
- 
+//solution for  GradLife :
+
+ package solutions
+ import chisel3._
+ import chisel3.util 
 
  class GradLife extends Module {
   val io = IO(new Bundle {

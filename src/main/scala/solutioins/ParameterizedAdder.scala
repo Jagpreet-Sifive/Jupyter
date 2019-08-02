@@ -1,5 +1,10 @@
-solution for  Parameterized Adder (Optional):
+//solution for  Parameterized Adder (Optional):
 
+ package solutions
+ import chisel3._
+ import chisel3.util 
+
+ 
 class ParameterizedAdder(saturate: Boolean) extends Module {
   val io = IO(new Bundle {
     val in_a = Input(UInt(4.W))
