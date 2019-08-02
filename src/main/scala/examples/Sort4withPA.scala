@@ -6,7 +6,7 @@ import chisel3.util
 /** Sort4 sorts its 4 inputs to its 4 outputs */
 
 
-class Sort4(ascending: Boolean) extends Module {
+class Sort4withPA(ascending: Boolean) extends Module {
   val io = IO(new Bundle {
     val in0 = Input(UInt(16.W))
     val in1 = Input(UInt(16.W))
@@ -87,7 +87,7 @@ class Sort4(ascending: Boolean) extends Module {
 }
 
 
-object Sort4   extends App{
-     chisel3.Driver.execute(args, ()=> new Sort4  )
+object Sort4awithPA  extends App{
+     chisel3.Driver.execute(args, ()=> new Sort4withPA  )
 }
 

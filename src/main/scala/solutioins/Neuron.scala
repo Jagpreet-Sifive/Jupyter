@@ -14,14 +14,8 @@
  val mac = io.in.zip(io.weights).map{ case(a:FixedPoint, b:FixedPoint) => a*b}.reduce(_+_)
   io.out := act(mac)
 
+           val Step: FixedPoint => FixedPoint = x => Mux(x <= 0.F(8.BP), 0.F(8.BP), 1.F(8.BP))
+           val ReLU: FixedPoint => FixedPoint = x => Mux(x <= 0.F(8.BP), 0.F(8.BP), x)
+
 }
-
-
-solution for Tester :
-
-
-
-Driver(() => new Neuron(2, Step)) {
-  c => new PeekPokeTester(c) {
-    
-  
+ 

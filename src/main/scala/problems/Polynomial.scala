@@ -18,5 +18,5 @@ class Polynomial extends Module {
   io.fOfX := result  
 }
 object  Polynomial extends App{
-   chisel3.Driver.execute(args, ()= new   Polynomial)
+	   chisel3.Driver.execute(args, ()=> anew   Polynomial)
 }

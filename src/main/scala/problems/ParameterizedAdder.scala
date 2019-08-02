@@ -15,5 +15,5 @@ class ParameterizedAdder(saturate: Boolean) extends Module {
   ???
 }
 object  ParameterizedAdder extends App{
-   chisel3.Driver.execute(args, ()= new   ParameterizedAdder)
+   chisel3.Driver.execute(args, ()=> new   ParameterizedAdder)
 }

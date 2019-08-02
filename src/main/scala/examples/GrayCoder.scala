@@ -11,7 +11,7 @@ class GrayCoder(bitwidth: Int) extends Module {
     val out = Output(UInt(bitwidth.W))
     val encode = Input(Bool()) 
   })
- 
+     when(io.encode){
     io.out := io.in ^ (io.in >> 1.U)
   } .otherwise { 
     io.out := Seq.fill(log2Ceil(bitwidth))(Wire(UInt(bitwidth.W))).zipWithIndex.fold((io.in, 0)){

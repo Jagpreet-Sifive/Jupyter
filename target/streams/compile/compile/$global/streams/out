@@ -1,0 +1,4 @@
+[0m[[0m[31merror[0m] [0m[0m/home/jagpreets/Jupyter/Jupyter/src/main/scala/examples/PassthroughGenerator2.scala:10:7: PassthroughGenerator is already defined as class PassthroughGenerator[0m
+[0m[[0m[31merror[0m] [0m[0mclass PassthroughGenerator(width: Int) extends Module { [0m
+[0m[[0m[31merror[0m] [0m[0m      ^[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m

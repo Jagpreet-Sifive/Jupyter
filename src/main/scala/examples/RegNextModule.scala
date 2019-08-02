@@ -3,7 +3,6 @@
 package examples
 
 import chisel3._
-import chisel3`.util
 
 class RegNextModule extends Module {
   val io = IO(new Bundle {

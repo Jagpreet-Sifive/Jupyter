@@ -20,5 +20,5 @@ class MyOperatorsTwo extends Module {
 }
 
 object MyOperatorsTwo extends App{
-	chisel3.Driver.execute(args ,()= new MyOperatorsTwo)
+		chisel3.Driver.execute(args ,()=> new MyOperatorsTwo)
 }
