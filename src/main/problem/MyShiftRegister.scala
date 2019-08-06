@@ -1,8 +1,10 @@
-//solution for ShiftRegister: 
 
- package problem
- import chisel3._
- import chisel3.util 
+package examples
+import chisel3._
+import chisel3.util._
+
+
+
 
 class MyShiftRegister(val init: Int = 1) extends Module {
   val io = IO(new Bundle {
@@ -11,16 +13,16 @@ class MyShiftRegister(val init: Int = 1) extends Module {
   })
 
   val state = RegInit(UInt(4.W), init.U)
- 
-  val nextState = (state << 1) | io.in
+
+    val nextState = (state << 1) | io.in
   state := nextState
   io.out := state
-  
-
+    
 }
-
 
 object MyShiftRegister extends App{
-    chisel3.Driver.execute(args , ()=> new MyShiftRegister (2) )
+    chisel3.Driver.execute(args ,  ()=> new  MyShiftRegister(2))
 }
+
+
 
